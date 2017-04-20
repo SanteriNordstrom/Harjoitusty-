@@ -1,0 +1,25 @@
+<h1> Täällä voit kirjautua Turku lehden tilaajaksi </h1>
+<div class="form">
+    <form class="form-horizontal tilausForm" role="form"
+            action="/lehti-tilaukset" method="POST">
+        <div class="form-group">
+            <label for="fieldName" class="col-sm-2 control-label">Nimi</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                id="fieldName" name="nimi" value="{{nimi}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="fieldEmail" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-4">
+                <input type="email" class="form-control" required
+                    id="fieldEmail" name="email" value="{{email}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-4">
+                <button type="submit" class="btn btn-default">Kirjaudu</button>
+            </div>
+        </div>
+    </form>
+</div>
